@@ -6,17 +6,17 @@ const initialState = {
   auto: 'none',
   fields: {
     password: {
-      placeholder: 'nova senha',
+      placeholder: 'New Password',
       secureTextEntry: true,
       maxLength: 72,
-      error: 'deve ter pelo menos 8 caracteres',
+      error: 'Must be at least 8 characters',
       stylesheet: formStyle
     },
     password_confirmation: {
-      placeholder: 'confirme a nova senha',
+      placeholder: 'Confirm the new password',
       secureTextEntry: true,
       maxLength: 72,
-      error: 'deve ter pelo menos 8 caracteres',
+      error: 'Must be at least 8 characters',
       stylesheet: formStyle
     }
   }

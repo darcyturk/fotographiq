@@ -46,7 +46,7 @@ class EditProfile extends Component {
       email: Email
     });
 
-    const buttonLabel = this.props.form.isLoading ? 'Alterando...' : 'Alterar';
+    const buttonLabel = this.props.form.isLoading ? 'Changing...' : 'Change';
 
     return(
       <View style={styles.container}>

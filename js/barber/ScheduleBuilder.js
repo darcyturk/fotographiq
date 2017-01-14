@@ -141,9 +141,9 @@ class ScheduleBuilder extends Component {
 
   _getButtonLabel() {
     if (this.props.edit) {
-      return this.props.form.isLoading ? 'Alterando...' : 'Alterar';
+      return this.props.form.isLoading ? 'Changing...' : 'Change';
     } else {
-      return this.props.form.isLoading ? 'Cadastrando...' : 'Avançar';
+      return this.props.form.isLoading ? 'Signing Up...' : 'Next';
     }
   }
 
@@ -221,7 +221,7 @@ class ScheduleBuilder extends Component {
                   <View style={styles.time}>
                     <TextInput
                       style={formStyle.textbox.normal}
-                      placeholder='Open at'
+                      placeholder='Opens at'
                       value={scheduleTemplate.opensAt.value}
                       editable={!isLoading}
                       maxLength={5}
@@ -251,7 +251,7 @@ class ScheduleBuilder extends Component {
                       ) : <View />}
                     <TextInput
                       style={formStyle.textbox.normal}
-                      placeholder='Close at'
+                      placeholder='Closes at'
                       value={scheduleTemplate.closesAt.value}
                       editable={!isLoading}
                       maxLength={5}

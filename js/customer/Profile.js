@@ -25,28 +25,28 @@ class Profile extends Component {
   _editProfile() {
     this.props.navigator.push({
       component: EditProfile,
-      title: 'Editar conta'
+      title: 'Edit Account'
     });
   }
 
   _editPassword() {
     this.props.navigator.push({
       component: EditPassword,
-      title: 'Editar senha'
+      title: 'Edit password'
     });
   }
 
   _openServiceTerms() {
     this.props.navigator.push({
       component: ServiceTerms,
-      title: 'Termos de uso'
+      title: 'Terms of Use'
     });
   }
 
   _openPrivacyPolicy() {
     this.props.navigator.push({
       component: PrivacyPolicy,
-      title: 'Política de privacidade'
+      title: 'Privacy Policy'
     });
   }
 
@@ -64,15 +64,15 @@ class Profile extends Component {
   _reviewBarbers() {
     this.props.navigator.push({
       component: ReviewBarberList,
-      title: 'Revisar barbearias'
+      title: 'Review Barbershops'
     });
   }
 
   _openBarbersChart() {
     this.props.navigator.push({
       component: BarbersChart,
-      title: 'Desempenho das barbearias',
-      rightButtonTitle: 'Filtros',
+      title: 'Performance of the barbershops',
+      rightButtonTitle: 'Filters',
       onRightButtonPress: () => this._openBarbersChartFilters()
     });
   }
@@ -80,7 +80,7 @@ class Profile extends Component {
   _openBarbersChartFilters() {
     this.props.navigator.push({
       component: BarbersChartFilters,
-      title: 'Editar filtros'
+      title: 'Edit filters'
     });
   }
 
@@ -139,7 +139,7 @@ class Profile extends Component {
         <Touchable
           style={[styles.item, styles.lastItem]}
           onPress={this._logout.bind(this)}>
-          <Text style={styles.subtitle}>Leave</Text>
+          <Text style={styles.subtitle}>Sign Out</Text>
         </Touchable>
       </View>
     );

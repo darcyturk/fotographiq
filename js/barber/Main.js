@@ -29,7 +29,7 @@ class Main extends Component {
           scrollWithoutAnimation={true}
           locked={true}
           tabBarPosition='bottom'
-          renderTabBar={() => <IconTabBar titles={['Agenda', 'Cortes', 'Conta']} />}>
+          renderTabBar={() => <IconTabBar titles={['Barbershops', 'Cuts', 'Account']} />}>
           <View tabLabel='event' style={[styles.tabView, styles.tabViewWithoutPadding]}>
             <HaircutSchedule navigator={this.props.navigator} />
           </View>

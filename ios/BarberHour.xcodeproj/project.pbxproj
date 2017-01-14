@@ -31,6 +31,7 @@
 		5C0660821D3C1065007E87AF /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0660811D3C1054007E87AF /* libRNVectorIcons.a */; };
 		5CB9B07F1D413EA6006B651A /* BarberTools.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB9B07E1D413EA6006B651A /* BarberTools.ttf */; };
 		5CC7635E1D5D3E760047604A /* libRNGeocoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC7635B1D5D3E660047604A /* libRNGeocoder.a */; };
+		6680C8961E29A1BF006D38E5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6680C8951E29A1BF006D38E5 /* ExternalAccessory.framework */; };
 		702F4D9E8BEB47999AF19735 /* libRCTFBLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4668772E03094BD29E4924F4 /* libRCTFBLogin.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9AF103E36EFD4E81B7836CBA /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCBBFB6757E402DB87B5403 /* libReactNativeConfig.a */; };
@@ -192,14 +193,14 @@
 			remoteGlobalIDString = BF8FCF941BFFB184000FCD37;
 			remoteInfo = RNGeocoder;
 		};
-		66F579BC1E209DED00569C6E /* PBXContainerItemProxy */ = {
+		66E268C81E2974090001DE79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66F579B51E209DED00569C6E /* RCTAnimation.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTAnimation;
 		};
-		66F579BE1E209DED00569C6E /* PBXContainerItemProxy */ = {
+		66E268CA1E2974090001DE79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66F579B51E209DED00569C6E /* RCTAnimation.xcodeproj */;
 			proxyType = 2;
@@ -267,7 +268,8 @@
 		5CB9B07E1D413EA6006B651A /* BarberTools.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BarberTools.ttf; path = ../../../android/app/src/main/assets/fonts/BarberTools.ttf; sourceTree = "<group>"; };
 		5CC7634A1D5D3E660047604A /* RNGeocoder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGeocoder.xcodeproj; path = "../node_modules/react-native-geocoder/ios/RNGeocoder.xcodeproj"; sourceTree = "<group>"; };
 		5CEDBEEA1DA5F06400B09353 /* BarberHour.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = BarberHour.entitlements; path = BarberHour/BarberHour.entitlements; sourceTree = "<group>"; };
-		66F579B51E209DED00569C6E /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6680C8951E29A1BF006D38E5 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		66F579B51E209DED00569C6E /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8B1F52BCF43A4A8E84DD0C29 /* BugsnagReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BugsnagReactNative.xcodeproj; path = "../node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.xcodeproj"; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
+				6680C8961E29A1BF006D38E5 /* ExternalAccessory.framework in Frameworks */,
 				5C06605A1D3C0827007E87AF /* FBSDKLoginKit.framework in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
@@ -420,6 +423,7 @@
 		21E5FEEA1DF84619BDCBD4BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6680C8951E29A1BF006D38E5 /* ExternalAccessory.framework */,
 				41DC520299DD48D3BE79578F /* libz.tbd */,
 			);
 			name = Frameworks;
@@ -484,11 +488,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66F579B61E209DED00569C6E /* Products */ = {
+		66E268C21E2974090001DE79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66F579BD1E209DED00569C6E /* libRCTAnimation.a */,
-				66F579BF1E209DED00569C6E /* libRCTAnimation-tvOS.a */,
+				66E268C91E2974090001DE79 /* libRCTAnimation.a */,
+				66E268CB1E2974090001DE79 /* libRCTAnimation-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -615,17 +619,22 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 610;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = DV2UNXR9S3;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
 								enabled = 1;
 							};
 						};
@@ -653,7 +662,7 @@
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
 				{
-					ProductGroup = 66F579B61E209DED00569C6E /* Products */;
+					ProductGroup = 66E268C21E2974090001DE79 /* Products */;
 					ProjectRef = 66F579B51E209DED00569C6E /* RCTAnimation.xcodeproj */;
 				},
 				{
@@ -873,18 +882,18 @@
 			remoteRef = 5CC7635A1D5D3E660047604A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		66F579BD1E209DED00569C6E /* libRCTAnimation.a */ = {
+		66E268C91E2974090001DE79 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRCTAnimation.a;
-			remoteRef = 66F579BC1E209DED00569C6E /* PBXContainerItemProxy */;
+			remoteRef = 66E268C81E2974090001DE79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		66F579BF1E209DED00569C6E /* libRCTAnimation-tvOS.a */ = {
+		66E268CB1E2974090001DE79 /* libRCTAnimation-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libRCTAnimation-tvOS.a";
-			remoteRef = 66F579BE1E209DED00569C6E /* PBXContainerItemProxy */;
+			remoteRef = 66E268CA1E2974090001DE79 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
@@ -987,6 +996,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1000,6 +1011,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarberHour.app/BarberHour";
 			};
@@ -1009,7 +1021,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BarberHourTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1019,6 +1033,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarberHour.app/BarberHour";
 			};
@@ -1031,9 +1046,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = BarberHour/BarberHour.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ltegon93@gmail.com (8JXK3JG58F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ltegon93@gmail.com (8JXK3JG58F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = DV2UNXR9S3;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-facebook-login/FacebookSDK";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1055,8 +1070,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.barberhour;
 				PRODUCT_NAME = BarberHour;
-				PROVISIONING_PROFILE = "c0851fb6-c25e-44cb-bf0e-f84f0b6b398c";
-				PROVISIONING_PROFILE_SPECIFIER = "Vicaso ReactNative";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1067,7 +1082,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = BarberHour/BarberHour.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Leonardo Tegon (AQ9QYX2WAY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Leonardo Tegon (AQ9QYX2WAY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-facebook-login/FacebookSDK";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1089,7 +1104,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.barberhour;
 				PRODUCT_NAME = BarberHour;
-				PROVISIONING_PROFILE = "cde26e32-b3f0-48a6-bff5-1a5e4df1c61e";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -1106,15 +1121,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1155,8 +1174,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1164,6 +1185,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1180,6 +1202,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

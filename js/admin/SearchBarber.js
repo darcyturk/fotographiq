@@ -58,7 +58,7 @@ class SearchBarber extends Component {
     } else if (dataSource.getRowCount() === 0) {
       var isResultSelected = selected && query === selected.name;
       var isQueryEmpty = !query || query.length < CHARS_TO_SEARCH;
-      var text = isQueryEmpty || isResultSelected ? '' : 'Nenhuma barbearia foi encontrada.';
+      var text = isQueryEmpty || isResultSelected ? '' : 'No barbershops were found.';
       content = <Text>{text}</Text>;
     } else {
       content =

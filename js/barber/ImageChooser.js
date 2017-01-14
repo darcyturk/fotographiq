@@ -25,10 +25,10 @@ import { addImage, removeImage, createImages, getImages, addError } from '../act
 class ImageChooser extends Component {
   _addImage() {
     ImagePickerManager.showImagePicker({
-      title: 'Selecionar foto',
-      cancelButtonTitle: 'Cancelar',
-      takePhotoButtonTitle: 'Tirar foto',
-      chooseFromLibraryButtonTitle: 'Escolher da galeria',
+      title: 'Select Photo',
+      cancelButtonTitle: 'Cancel',
+      takePhotoButtonTitle: 'Take a Picture',
+      chooseFromLibraryButtonTitle: 'Choose from Gallery',
       maxWidth: 700,
       maxHeight: 700
     }, (response) => {
@@ -49,11 +49,11 @@ class ImageChooser extends Component {
 
   _confirmImageDeletion(imageUID) {
     Alert.alert(
-      'Remover foto',
-      'Tem certeza que quer remover essa foto?',
+      'Remove Photo',
+      'Are you sure you want to remove this photo?',
       [
-        {text: 'Remover foto', onPress: () => {this._removeImage(imageUID)} },
-        {text: 'Cancelar', style: 'cancel'},
+        {text: 'Remove Photo', onPress: () => {this._removeImage(imageUID)} },
+        {text: 'Cancel', style: 'cancel'},
       ]
     );
   }
@@ -110,9 +110,9 @@ class ImageChooser extends Component {
 
   _getButtonLabel() {
     if (this.props.edit) {
-      return this.props.form.isLoading ? 'Alterando...' : 'Alterar';
+      return this.props.form.isLoading ? 'Changing...' : 'Change';
     } else {
-      return this.props.form.isLoading ? 'Cadastrando...' : 'Avançar';
+      return this.props.form.isLoading ? 'Signing Up...' : 'Next';
     }
   }
 
@@ -123,7 +123,7 @@ class ImageChooser extends Component {
       errorMessage = <Text style={formStyle.errorBlock}>Please add at least one photo.</Text>;
     }
 
-    var infoPrefix = this.props.edit ? 'Altere as' : 'Adicione algumas';
+    var infoPrefix = this.props.edit ? 'Change the' : 'Add some';
     var content;
     if (this.props.form.isRequestingInfo) {
       content = <ActivityIndicator size='small' />;

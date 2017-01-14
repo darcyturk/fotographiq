@@ -60,7 +60,7 @@ class BarberList extends Component {
   _openFindCityFromGPS() {
     this.props.navigator.push({
       component: FindCityFromGPS,
-      title: 'Escolher cidade',
+      title: 'Choose city',
       passProps: { edit: true }
     });
   }
@@ -84,7 +84,7 @@ class BarberList extends Component {
     var content;
 
     if (!this.props.isLoading && this.props.dataSource.getRowCount() === 0) {
-      var message = 'Ainda não temos barbearias cadastradas em sua cidade.';
+      var message = 'We do not have registered barbers in your city yet.';
       content = <ScrollView refreshControl={refreshControl}><EmptyResults icon='shop' message={message} /></ScrollView>;
     } else {
       content =

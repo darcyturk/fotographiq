@@ -55,7 +55,7 @@ class HaircutHistory extends Component {
     var content;
 
     if (!this.props.isLoading && this.props.dataSource.getRowCount() === 0) {
-      var message = 'Você ainda não possui nenhum corte.';
+      var message = 'You do not have any cuts yet.';
       content = <ScrollView refreshControl={refreshControl}><EmptyResults icon='scissor-4' message={message} /></ScrollView>;
     } else {
       content =

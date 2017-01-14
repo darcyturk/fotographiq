@@ -73,9 +73,9 @@ class AddressForm extends Component {
 
   _getButtonLabel() {
     if (this.props.edit) {
-      return this.props.isLoading ? 'Alterando...' : 'Alterar';
+      return this.props.isLoading ? 'Changing...' : 'Change';
     } else {
-      return this.props.isLoading ? 'Cadastrando...' : 'Avançar';
+      return this.props.isLoading ? 'Signing Up...' : 'Next';
     }
   }
 
@@ -92,7 +92,7 @@ class AddressForm extends Component {
     var formOptions = this.props.form;
     formOptions.fields.zipcode.onBlur = this.loadZipcode.bind(this);
 
-    var infoPrefix = this.props.edit ? 'Altere' : 'Cadastre';
+    var infoPrefix = this.props.edit ? 'Change' : 'Create an Account';
     var content;
     if (this.props.form.isRequestingInfo) {
       content = <ActivityIndicator size='small' />;

@@ -72,7 +72,7 @@ class ReviewBarber extends Component {
         errorMessage = <Text style={formStyle.errorBlock}>It was not possible to change the barber.</Text>;
       }
 
-      const buttonLabel = this.props.form.isLoading ? 'Alterando...' : 'Alterar';
+      const buttonLabel = this.props.form.isLoading ? 'Changing...' : 'Change';
 
       content = (
         <View>
@@ -100,7 +100,7 @@ class ReviewBarber extends Component {
           <View style={styles.separator} />
           <View style={styles.innerContainer}>
             {services.map((service) => {
-              const icon = service.name === 'Corte de Cabelo' ? 'scissor-4' : 'razor';
+              const icon = service.name === 'Haircut' ? 'scissor-4' : 'razor';
               return(
                 <View key={service.id} style={styles.serviceContainer}>
                   <BarberIcon name={icon} size={24} color='#003459' style={styles.icon} />

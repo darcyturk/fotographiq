@@ -81,9 +81,9 @@ class ServicesForm extends Component {
 
   _getButtonLabel() {
     if (this.props.edit) {
-      return this.props.form.isLoading ? 'Alterando...' : 'Alterar';
+      return this.props.form.isLoading ? 'Changing...' : 'Change';
     } else {
-      return this.props.form.isLoading ? 'Cadastrando...' : 'Avançar';
+      return this.props.form.isLoading ? 'Signing Up...' : 'Next';
     }
   }
 

@@ -58,7 +58,7 @@ class ReviewBarberList extends Component {
     var content;
 
     if (!this.props.isLoading && this.props.dataSource.getRowCount() === 0) {
-      var message = 'Não existem barbearias cadastradas.';
+      var message = 'There are no registered barbershops.';
       content = <ScrollView refreshControl={refreshControl}><EmptyResults icon='shop' message={message} /></ScrollView>;
     } else {
       content =
@@ -77,7 +77,7 @@ class ReviewBarberList extends Component {
     return(
       <View style={styles.container}>
         <StatusBar backgroundColor='#C5C5C5' networkActivityIndicatorVisible={this.props.isLoading || this.props.isRefreshing} />
-        <Toolbar backIcon border navigator={this.props.navigator} title='Revisar barbearias' />
+        <Toolbar backIcon border navigator={this.props.navigator} title='Review barbershops' />
         <View style={styles.listContainer}>{content}</View>
       </View>
     );

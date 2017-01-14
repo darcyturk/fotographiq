@@ -43,14 +43,14 @@ class HaircutSchedule extends Component {
   }
 
   _confirmToggleActive(schedule) {
-    const action = schedule.active ? 'desativar' : 'ativar';
+    const action = schedule.active ? 'Disable' : 'Activate';
 
     Alert.alert(
-      `${action} horário`,
-      `Tem certeza que deseja ${action} esse horário?`,
+      `${action} schedule`,
+      `Are you sure you want to ${action} this time?`,
       [
-        {text: `Sim, ${action} horário`, onPress: () => {this._toggleActive(schedule)} },
-        {text: 'Cancelar', style: 'cancel'},
+        {text: `Yes, ${action} schedule`, onPress: () => {this._toggleActive(schedule)} },
+        {text: 'Cancel', style: 'cancel'},
       ]
     );
   }
@@ -86,10 +86,10 @@ class HaircutSchedule extends Component {
 
   _getLegendItems() {
     return [
-      {label: 'horário cancelado', iconColor: '#e73348' },
-      {label: 'horário finalizado', iconColor: '#57a77e' },
-      {label: 'horário agendado', iconColor: '#003459' },
-      {label: 'horário livre', iconColor: 'white' }
+      {label: 'Canceled Time', iconColor: '#e73348' },
+      {label: 'Schedule Ended', iconColor: '#57a77e' },
+      {label: 'Scheduled Time', iconColor: '#003459' },
+      {label: 'Free Time', iconColor: 'white' }
     ];
   }
 
@@ -103,7 +103,7 @@ class HaircutSchedule extends Component {
     if (isLoading) {
       content = <ActivityIndicator />;
     } else if (days.length === 0) {
-      var message = 'Você ainda não possui nenhum horário. Aguarde até que nossa equipe ative seu cadastro.';
+      var message = "You don't have a schedule yet. Please wait until our team activates your registration.";
       content = <ScrollView refreshControl={refreshControl}><EmptyResults icon='razor-2' message={message} /></ScrollView>;
     } else {
       content =

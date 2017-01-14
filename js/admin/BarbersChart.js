@@ -37,7 +37,7 @@ class BarbersChart extends Component {
   _openFilters() {
     this.props.navigator.push({
       component: BarbersChartFilters,
-      title: 'Editar filtros'
+      title: 'Edit filters'
     });
   }
 
@@ -128,7 +128,7 @@ class BarbersChart extends Component {
         </View>
       );
     } else if (!isLoading) {
-      chartContent = <EmptyResults icon='profile' message='Nenhum resultado encontrado' />;
+      chartContent = <EmptyResults icon='profile' message='No Results Found' />;
     }
 
     return (
@@ -136,9 +136,9 @@ class BarbersChart extends Component {
         <StatusBar backgroundColor='#C5C5C5' networkActivityIndicatorVisible={isLoading} />
         <Toolbar backIcon border
           navigator={this.props.navigator}
-          title='Desempenho das barbearias barbearias'
+          title='Performance of barber shops'
           actions={[
-            {title: 'Filtros', show: 'always', iconName: 'filter-list'}
+            {title: 'Filters', show: 'always', iconName: 'filter-list'}
           ]}
           onActionSelected={this._openFilters.bind(this)} />
         <View style={styles.innerContainer}>

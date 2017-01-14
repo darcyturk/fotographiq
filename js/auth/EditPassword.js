@@ -45,7 +45,7 @@ class EditPassword extends Component {
       password_confirmation: t.String
     });
 
-    const buttonLabel = this.props.form.isLoading ? 'Alterando...' : 'Alterar';
+    const buttonLabel = this.props.form.isLoading ? 'Changing...' : 'Change';
 
     return(
       <View style={styles.container}>
