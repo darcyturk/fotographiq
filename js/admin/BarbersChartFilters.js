@@ -29,7 +29,7 @@ class BarbersChartFilters extends Component {
     return (
       <ScrollView automaticallyAdjustContentInsets={false} style={styles.container}>
         <StatusBar backgroundColor='#C5C5C5' networkActivityIndicatorVisible={isLoading} />
-        <Toolbar backIcon border navigator={this.props.navigator} title='Editar filtros' />
+        <Toolbar backIcon border navigator={this.props.navigator} title='Edit Filters' />
         <View style={styles.innerContainer}>
           <SearchCity
             items={cities}
@@ -59,7 +59,7 @@ class BarbersChartFilters extends Component {
             onPress={() => this.props.navigator.pop()} />
           <Button
             outline
-            text='Limpar filtros'
+            text='Clear Filters'
             containerStyle={styles.button}
             onPress={this._resetFilters.bind(this)} />
         </View>

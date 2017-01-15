@@ -55,21 +55,21 @@ class AccountTypeSelector extends Component {
             containerStyle={styles.buttonContainer}
             onPress={() => {this._setAccountType('Customer')}}
             icon='moustache'
-            text='Cliente'
+            text='Customer'
             disabled={this.props.isLoading}
             selected={this.props.accountType === 'Customer'} />
           <SelectableImageButton
             containerStyle={styles.buttonContainer}
             onPress={() => {this._setAccountType('Barber')}}
             icon='razor'
-            text='Barbeiro'
+            text='Barber'
             disabled={this.props.isLoading}
             selected={this.props.accountType === 'Barber'} />
         </View>
         {errorMessage}
         <Button
           containerStyle={styles.button}
-          text='Avançar'
+          text='Next'
           disabled={this.props.isLoading}
           onPress={this._openNextStep.bind(this)} />
       </View>

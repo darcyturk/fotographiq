@@ -84,7 +84,7 @@ class BarberList extends Component {
     var content;
 
     if (!this.props.isLoading && this.props.dataSource.getRowCount() === 0) {
-      var message = 'We do not have registered barbers in your city yet.';
+      var message = 'Sorry! We do not have photographers in your city yet.';
       content = <ScrollView refreshControl={refreshControl}><EmptyResults icon='shop' message={message} /></ScrollView>;
     } else {
       content =

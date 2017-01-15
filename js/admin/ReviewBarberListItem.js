@@ -22,7 +22,7 @@ export default class ReviewBarberListItem extends Component {
 
   render() {
     const {barber} = this.props;
-    const active = barber.active ? 'Ativado' : 'Desativado';
+    const active = barber.active ? 'Activated' : 'Disabled';
     const activeStyle = barber.active ? {color: 'green'} : {color: 'red'};
 
     return(

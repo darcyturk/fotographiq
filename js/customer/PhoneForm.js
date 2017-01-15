@@ -60,11 +60,11 @@ class PhoneForm extends Component {
         <Toolbar backIcon navigator={this.props.navigator} />
         <View style={styles.innerContainer}>
           <Text style={styles.title}>Confirm Number</Text>
-          <Text style={styles.info}>Enter your mobile number below:</Text>
+          <Text style={styles.info}>Mobile Number:</Text>
           <View style={styles.formContainer}>
             <Form ref='form' type={Login} options={this.props.form} value={this.getFormValue()} />
           </View>
-          <Text style={styles.info}>You will receive an SMS with a code to finish your registration.</Text>
+          <Text style={styles.info}>In just a moment, you will recieve a text message containing your one time access code.</Text>
           <Button
             containerStyle={styles.button}
             text={buttonLabel}

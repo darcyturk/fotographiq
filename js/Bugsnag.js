@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Client } from 'bugsnag-react-native';
 import { connect } from 'react-redux';
-//import Config from 'react-native-config';
-const bugsnagKey = '3cb03916719fa3065d7f0a285a48664e';
+import Config from 'react-native-config';
+const bugsnagKey = Config.BUGSNAG_KEY;
 
 class Bugsnag extends Component {
   constructor(props) {

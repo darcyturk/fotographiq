@@ -67,8 +67,8 @@ class VerifyPhone extends Component {
 
   render() {
     const VerifyCode = t.struct({verification_code: t.String});
-    const buttonLabel = this.props.form.isLoading ? 'Confirming...' : 'Confirm Registration';
-    const linkText = this.props.form.isResequestingCode ? 'Sending...' : 'Send Again';
+    const buttonLabel = this.props.form.isLoading ? 'Confirming...' : 'Submit';
+    const linkText = this.props.form.isResequestingCode ? 'Sending...' : 'Resend';
 
     return(
       <View style={styles.container}>

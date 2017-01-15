@@ -117,7 +117,7 @@ function appointments(state = initialState, action) {
         ...state,
         isLoading: false,
         isFinishing: false,
-        error: 'o corte só pode ser finalizado depois de terminado'
+        error: 'Photoshoot can only be finalized after it is finished.'
       };
     case 'GET_APPOINTMENT_SUCCESS':
       var {appointment} = action.data;

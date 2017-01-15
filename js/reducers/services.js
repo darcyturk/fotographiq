@@ -4,8 +4,8 @@ const initialState = {
   success: false,
   error: false,
   services: [
-    {name: 'Corte de Cabelo', selected: false, price: null, error: null},
-    {name: 'Corte de Barba', selected: false, price: null, error: null}
+    {name: 'Photography', selected: false, price: null, error: null},
+    {name: 'Videography', selected: false, price: null, error: null}
   ]
 };
 

@@ -105,7 +105,7 @@ class Login extends Component {
 
       if (this.props.type === 'Photographer') {
         component = BarberMain;
-      } else if (this.props.type === 'Client') {
+      } else if (this.props.type === 'Customer') {
         component = this.props.city ? CustomerMain : FindCityFromGPS;
       }
 

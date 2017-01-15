@@ -52,22 +52,22 @@ class HaircutDetails extends Component {
 
   _confirmCancelSchedule() {
     Alert.alert(
-      'Cancelar horário',
-      'Tem certeza que deseja cancelar esse horário?',
+      'Cancel Photoshoot',
+      'Are you sure you want to cancel this photoshoot?',
       [
-        {text: 'Sim, cancelar horário', onPress: () => {this._cancelSchedule()} },
-        {text: 'Voltar', style: 'cancel'},
+        {text: 'Confirm Cancel', onPress: () => {this._cancelSchedule()} },
+        {text: 'Go Back', style: 'cancel'},
       ]
     );
   }
 
   _confirmFinishSchedule() {
     Alert.alert(
-      'Finalizar horário',
-      'Tem certeza que deseja finalizar esse horário?',
+      'Finalize Photoshoot',
+      'Confirm photoshoot completion.',
       [
-        {text: 'Sim, finalizar horário', onPress: () => {this._finishSchedule()} },
-        {text: 'Voltar', style: 'cancel'},
+        {text: 'Finish Shoot', onPress: () => {this._finishSchedule()} },
+        {text: 'Go Back', style: 'cancel'},
       ]
     );
   }
@@ -94,8 +94,8 @@ class HaircutDetails extends Component {
     var content;
     if (appointment) {
       const { schedule, customer, appointment_services } = appointment;
-      const cancelButtonLabel = this.props.form.isLoading ? 'Cancelando...' : 'Cancelar';
-      const finishButtonLabel = this.props.form.isFinishing ? 'Finalizando...' : 'Finalizar';
+      const cancelButtonLabel = this.props.form.isLoading ? 'Cancelling...' : 'Cancelled';
+      const finishButtonLabel = this.props.form.isFinishing ? 'Finializing...' : 'Finished';
       var errorMessage;
       if (this.props.form.error) {
         errorMessage = <Text style={formStyle.errorBlock}>{this.props.form.error}</Text>;
@@ -125,7 +125,7 @@ class HaircutDetails extends Component {
           <View style={styles.separator} />
           <View style={styles.innerContainer}>
             {appointment_services.map((appointmentService) => {
-              const icon = appointmentService.service_name === 'Corte de Cabelo' ? 'scissor-4' : 'razor';
+              const icon = appointmentService.service_name === 'Photoshoot' ? 'scissor-4' : 'razor';
               return(
                 <View key={appointmentService.id} style={styles.serviceContainer}>
                   <BarberIcon name={icon} size={24} color='#003459' style={styles.serviceIcon} />

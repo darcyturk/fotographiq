@@ -180,7 +180,7 @@ class ScheduleBuilder extends Component {
                 onDateChange={(date) => this.setState({date: date})}
                 minuteInterval={30}/>
               <Button
-                text='OK'
+                text='Okay'
                 containerStyle={styles.button}
                 onPress={this.selectTime.bind(this)} />
             </View>
@@ -203,7 +203,7 @@ class ScheduleBuilder extends Component {
             {content}
             <View style={styles.formContainer}>
               <View style={[styles.row, styles.item]}>
-                <Text style={styles.info}>Average Length of Service:</Text>
+                <Text style={styles.info}>Average Service Time:</Text>
                 <TextInput
                   style={[formStyle.textbox.normal, styles.averageServiceTimeInput]}
                   placeholder='hours:minutes'
@@ -215,13 +215,13 @@ class ScheduleBuilder extends Component {
               {this.props.form.averageServiceTime.error ? (
                   <Text style={[formStyle.errorBlock, {textAlign: 'right'}]}>{this.props.form.averageServiceTime.error}</Text>
                 ) : <View />}
-              <Text style={formStyle.helpBlock.normal}>Use the format: hours:minutes</Text>
+              <Text style={formStyle.helpBlock.normal}>Time Format = hh:mm</Text>
               {this.props.form.scheduleTemplates.map((scheduleTemplate) => {
                 var time = scheduleTemplate.active ? (
                   <View style={styles.time}>
                     <TextInput
                       style={formStyle.textbox.normal}
-                      placeholder='Opens at'
+                      placeholder='Open'
                       value={scheduleTemplate.opensAt.value}
                       editable={!isLoading}
                       maxLength={5}
@@ -231,7 +231,7 @@ class ScheduleBuilder extends Component {
                       ) : <View />}
                     <TextInput
                       style={formStyle.textbox.normal}
-                      placeholder='Lunch at'
+                      placeholder='Start of Lunch'
                       value={scheduleTemplate.lunchStartsAt.value}
                       editable={!isLoading}
                       maxLength={5}
@@ -241,7 +241,7 @@ class ScheduleBuilder extends Component {
                       ) : <View />}
                     <TextInput
                       style={formStyle.textbox.normal}
-                      placeholder='End of lunch'
+                      placeholder='End of Lunch'
                       value={scheduleTemplate.lunchEndsAt.value}
                       editable={!isLoading}
                       maxLength={5}
@@ -251,7 +251,7 @@ class ScheduleBuilder extends Component {
                       ) : <View />}
                     <TextInput
                       style={formStyle.textbox.normal}
-                      placeholder='Closes at'
+                      placeholder='Close'
                       value={scheduleTemplate.closesAt.value}
                       editable={!isLoading}
                       maxLength={5}

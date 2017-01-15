@@ -47,8 +47,8 @@ class HaircutDetails extends Component {
       'Cancel time',
       'Are you sure you want to cancel?',
       [
-        {text: 'Cancelar horário', onPress: () => {this._cancelSchedule()} },
-        {text: 'Voltar', style: 'cancel'},
+        {text: 'Cancel Shoot', onPress: () => {this._cancelSchedule()} },
+        {text: 'Back', style: 'cancel'},
       ]
     );
   }
@@ -75,7 +75,7 @@ class HaircutDetails extends Component {
     var content;
     if (appointment) {
       const { schedule, barber, appointment_services } = appointment;
-      const buttonLabel = this.props.form.isLoading ? 'Canceling ...' : 'Cancel';
+      const buttonLabel = this.props.form.isLoading ? 'Canceling ...' : 'Cancelled';
 
       content = (
         <View>
@@ -97,7 +97,7 @@ class HaircutDetails extends Component {
           <View style={styles.separator} />
           <View style={styles.innerContainer}>
             {appointment_services.map((appointmentService) => {
-              const icon = appointmentService.service_name === 'Corte de Cabelo' ? 'scissor-4' : 'razor';
+              const icon = appointmentService.service_name === 'Photography' ? 'scissor-4' : 'razor';
               return(
                 <View key={appointmentService.id} style={styles.serviceContainer}>
                   <BarberIcon name={icon} size={24} color='#003459' style={styles.serviceIcon} />

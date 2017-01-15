@@ -65,11 +65,11 @@ class BarberDetails extends Component {
 
     if (selectedServices.length && selectedSchedule) {
       Alert.alert(
-        'Agendar horário',
-        'Tem certeza que deseja agendar esse horário?',
+        'Select an Appointment',
+        'Book this appointment?',
         [
-          {text: 'Agendar horário', onPress: () => {this._createAppointment(selectedServices, selectedSchedule)} },
-          {text: 'Cancelar', style: 'cancel'},
+          {text: 'Book', onPress: () => {this._createAppointment(selectedServices, selectedSchedule)} },
+          {text: 'Cancel', style: 'cancel'},
         ]
       );
     } else {
@@ -101,7 +101,7 @@ class BarberDetails extends Component {
     if (isLoading) {
       content = <ActivityIndicator />;
     } else if (days.length === 0) {
-      content = <EmptyResults icon='shop' message='Nenhum horário disponível no momento.' />
+      content = <EmptyResults icon='shop' message='No times available.' />
     } else {
       content = (
         <View style={styles.innerContainer}>

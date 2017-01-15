@@ -103,7 +103,7 @@ class HaircutSchedule extends Component {
     if (isLoading) {
       content = <ActivityIndicator />;
     } else if (days.length === 0) {
-      var message = "You don't have a schedule yet. Please wait until our team activates your registration.";
+      var message = "You will recieve a schedule once your application is done being reviewed.";
       content = <ScrollView refreshControl={refreshControl}><EmptyResults icon='razor-2' message={message} /></ScrollView>;
     } else {
       content =

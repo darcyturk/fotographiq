@@ -9,7 +9,7 @@ const initialState = {
       autoCapitalize: 'none',
       placeholder: 'e-mail',
       keyboardType: 'email-address',
-      error: 'e-mail inválido',
+      error: 'invalid email',
       stylesheet: formStyle,
       maxLength: 200
     }
@@ -26,7 +26,7 @@ function forgotPassword(state = initialState, action) {
           email: {
             ...state.fields.email,
             hasError: true,
-            error: 'não foi possível enviar a redefinição de senha',
+            error: "Could't send password reset",
             editable: true
           }
         }

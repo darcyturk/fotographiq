@@ -32,7 +32,7 @@ class ForgotPassword extends Component {
     if (this.props.form.success) {
       this.props.navigator.replace({
         component: ResetPasswordSent,
-        title: 'Redefinir senha'
+        title: 'Change Password'
       });
     }
   }
@@ -48,7 +48,7 @@ class ForgotPassword extends Component {
       email: Email
     });
 
-    const buttonLabel = this.props.form.isLoading ? 'Enviando...' : 'Enviar';
+    const buttonLabel = this.props.form.isLoading ? 'Sending...' : 'Send';
 
     return(
       <View style={styles.container}>

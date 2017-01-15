@@ -25,9 +25,9 @@ export default class WaitReview extends Component {
         <StatusBar backgroundColor='#C5C5C5'/>
         <Logo style={styles.logo} />
         <View style={styles.innerContainer}>
-          <Text style={styles.title}>Full Record!</Text>
-          <Text style={styles.info}>Our staff will review the information and reach out to you shortly.</Text>
-          <Button containerStyle={styles.button} text='OK' onPress={this._openMain.bind(this)} />
+          <Text style={styles.title}>Review in Progress!</Text>
+          <Text style={styles.info}>Our team is currently reviewing your application and will reach out to you shortly.</Text>
+          <Button containerStyle={styles.button} text='Okay' onPress={this._openMain.bind(this)} />
         </View>
       </View>
     );

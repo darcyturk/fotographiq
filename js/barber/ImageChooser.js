@@ -146,8 +146,8 @@ class ImageChooser extends Component {
         {toolbarContent}
         <View style={styles.innerContainer}>
           <Text style={styles.title}>Photos</Text>
-          <Text style={styles.info}>{infoPrefix} Photos of his barbershop:</Text>
-          <Text style={[formStyle.helpBlock.normal, {textAlign: 'center'}]}>Maximum number of photos: 5</Text>
+          <Text style={styles.info}>{infoPrefix} photos of your barbershop:</Text>
+          <Text style={[formStyle.helpBlock.normal, {textAlign: 'center'}]}>Maximum # of photos: 5</Text>
           {content}
           <View style={styles.formContainer}>
             <Touchable style={[styles.image, opacity]} onPress={onPress}>

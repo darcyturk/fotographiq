@@ -12,9 +12,9 @@ const initialState = {
     toDate: null
   },
   statuses: [
-    { name: 'scheduled', selected: true, translated_name: 'agendados' },
-    { name: 'finished', selected: true, translated_name: 'finalizados' },
-    { name: 'canceled', selected: true, translated_name: 'cancelados' }
+    { name: 'scheduled', selected: true, translated_name: 'scheduled' },
+    { name: 'finished', selected: true, translated_name: 'finalized' },
+    { name: 'canceled', selected: true, translated_name: 'canceled' }
   ],
   chartData: []
 };

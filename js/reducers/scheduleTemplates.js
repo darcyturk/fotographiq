@@ -4,13 +4,13 @@ const initialState = {
   success: false,
   error: false,
   scheduleTemplates: [
-    {weekday: 'monday', name: 'Segunda', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
-    {weekday: 'tuesday', name: 'Terça', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
-    {weekday: 'wednesday', name: 'Quarta', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
-    {weekday: 'thursday', name: 'Quinta', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
-    {weekday: 'friday', name: 'Sexta', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
-    {weekday: 'saturday', name: 'Sábado', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
-    {weekday: 'sunday', name: 'Domingo', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}}
+    {weekday: 'monday', name: 'Monday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
+    {weekday: 'tuesday', name: 'Tuesday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
+    {weekday: 'wednesday', name: 'Wednesday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
+    {weekday: 'thursday', name: 'Thursday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
+    {weekday: 'friday', name: 'Friday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
+    {weekday: 'saturday', name: 'Saturday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}},
+    {weekday: 'sunday', name: 'Sunday', active: false, opensAt: {value: null, error: null}, closesAt: {value: null, error: null}, lunchStartsAt: {value: null, error: null}, lunchEndsAt: {value: null, error: null}}
   ],
   averageServiceTime: {value: '01:00', error: null}
 };

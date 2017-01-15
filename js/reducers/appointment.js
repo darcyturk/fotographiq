@@ -9,7 +9,7 @@ function appointment(state = initialState, action) {
     case 'ADD_APPOINTMENT_ERROR':
       return {
         ...state,
-        error: 'Por favor, selecione um horário e pelo menos um serviço.'
+        error: 'Please select a time & at least one service.'
       };
     case 'SELECT_SCHEDULE':
     case 'TOGGLE_BARBER_SERVICE':
