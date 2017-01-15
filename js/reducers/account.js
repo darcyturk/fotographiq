@@ -7,7 +7,7 @@ const initialState = {
   fields: {
     name: {
       placeholder: 'nome',
-      error: 'digite o nome',
+      error: 'Enter the name',
       stylesheet: formStyle,
       maxLength: 200
     },
@@ -15,7 +15,7 @@ const initialState = {
       autoCapitalize: 'none',
       placeholder: 'e-mail',
       keyboardType: 'email-address',
-      error: 'e-mail inválido',
+      error: 'Invalid email',
       stylesheet: formStyle,
       maxLength: 200
     }

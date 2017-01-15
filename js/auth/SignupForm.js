@@ -67,7 +67,7 @@ class SignupForm extends Component {
       password_confirmation: t.String
     });
 
-    const buttonLabel = this.props.form.isLoading ? 'Signing up...' : 'Home';
+    const buttonLabel = this.props.form.isLoading ? 'Signing up...' : 'Sign Up';
 
     return(
       <View style={styles.container}>
@@ -85,7 +85,7 @@ class SignupForm extends Component {
         </View>
         <View style={styles.signupContainer}>
           <LargeButton
-            text='Already have an account?'
+            text='Already have an account? '
             linkText='Login'
             disabled={this.props.form.isLoading}
             onPress={this._openLogin.bind(this)} />

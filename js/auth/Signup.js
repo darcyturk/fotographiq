@@ -82,7 +82,7 @@ class Signup extends Component {
   }
 
   render() {
-    const facebookButtonLabel = this.props.isLoading ? 'Signing Up...' : 'Sign up with Facebook';
+    const facebookButtonLabel = this.props.isLoading ? 'Signing Up...' : 'Signup with Facebook';
 
     return(
       <View style={styles.container}>
@@ -91,7 +91,7 @@ class Signup extends Component {
         <View style={styles.formContainer}>
           <Button
             containerStyle={styles.button}
-            text='Home'
+            text='Creat an Account'
             onPress={this._openSignupForm.bind(this)}
             disabled={this.props.isLoading} />
           <View style={styles.privacyContainer}>

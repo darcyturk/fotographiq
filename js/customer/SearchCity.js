@@ -55,7 +55,7 @@ class SearchCity extends Component {
     if (isLoading) {
       content = <ActivityIndicator />;
     } else if (dataSource.getRowCount() === 0) {
-      var text = !query || query.length < CHARS_TO_SEARCH ? '' : 'Nenhuma cidade foi encontrada.';
+      var text = !query || query.length < CHARS_TO_SEARCH ? '' : 'No towns were found.';
       content = <Text>{text}</Text>;
     } else {
       content =
@@ -72,7 +72,7 @@ class SearchCity extends Component {
             style={formStyle.textbox.normal}
             onChangeText={(text) => {this.onChangeText(text)}}
             value={query}
-            placeholder='digite sua cidade'
+            placeholder='Enter your city'
             autoCapitalize='none'
             returnKeyType='search' />
         </View>

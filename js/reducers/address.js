@@ -10,39 +10,39 @@ const initialState = {
     zipcode: {
       placeholder: 'CEP',
       keyboardType: 'numeric',
-      error: 'digite o CEP',
+      error: 'Type the zip code',
       stylesheet: formStyle,
-      help: 'digite somente números',
+      help: 'Only enter numbers',
       maxLength: 8
     },
     street: {
-      placeholder: 'rua',
-      error: 'digite a rua',
+      placeholder: 'Street',
+      error: 'Type street',
       stylesheet: formStyle,
       maxLength: 200
     },
     district: {
-      placeholder: 'bairro',
-      error: 'digite o bairro',
+      placeholder: 'Neighborhood',
+      error: 'Enter the neighborhood',
       stylesheet: formStyle,
       maxLength: 200
     },
     number: {
-      placeholder: 'número',
+      placeholder: 'Number',
       keyboardType: 'numeric',
-      error: 'digite o número',
+      error: 'Enter the number',
       stylesheet: formStyle,
       maxLength: 10
     },
     city: {
-      placeholder: 'cidade',
-      error: 'digite a cidade',
+      placeholder: 'City',
+      error: 'Enter the city',
       stylesheet: formStyle,
       maxLength: 200
     },
     state: {
-      placeholder: 'estado',
-      error: 'digite o estado',
+      placeholder: 'State',
+      error: 'Type the state',
       stylesheet: formStyle,
       maxLength: 2
     },

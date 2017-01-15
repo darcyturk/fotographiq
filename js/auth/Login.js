@@ -126,7 +126,7 @@ class Login extends Component {
       password: t.String
     });
 
-    const buttonLabel = this.props.form.isLoading ? 'Logging In...' : 'Login';
+    const buttonLabel = this.props.form.isLoading ? 'Logging in...' : 'Sign In';
 
     return(
       <View style={styles.container}>
@@ -144,21 +144,21 @@ class Login extends Component {
           <View style={styles.forgotPasswordContainer}>
             <Text>Forgot your password?</Text>
             <TouchableOpacity onPress={this._openForgotPassowrd.bind(this)}>
-              <Text style={styles.link}>Reset Password.</Text>
+              <Text style={styles.link}> Reset password</Text>
             </TouchableOpacity>
           </View>
           <TextSeparator style={styles.separatorContainer} />
           <Button
             outline
             containerStyle={styles.facebookButton}
-            text='Sign in with Facebook'
+            text='Login with Facebook'
             disabled={this.props.form.isLoading}
             onPress={this._onFacebookLogin.bind(this)} />
         </View>
         <View style={styles.signupContainer}>
           <LargeButton
             text="Don't have an account? "
-            linkText='Sign Up'
+            linkText='Signup'
             disabled={this.props.form.isLoading}
             onPress={this._openSignup.bind(this)} />
         </View>

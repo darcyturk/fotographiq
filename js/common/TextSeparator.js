@@ -9,7 +9,7 @@ const TextSeparator = (props) => {
   return(
     <View style={[styles.container, props.style]}>
       <View style={styles.separator} />
-      <Text style={styles.text}>  OU  </Text>
+      <Text style={styles.text}></Text>
       <View style={styles.separator} />
     </View>
   );
